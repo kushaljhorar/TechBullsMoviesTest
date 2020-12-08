@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dm2dp">2dp</dimen>
+    <dimen name="dm10dp">10dp</dimen>
+    <dimen name="dm5dp">5dp</dimen>
+    <dimen name="dm100dp">100dp</dimen>
+    <dimen name="sm25sp">25sp</dimen>
+    <dimen name="dm45dp">45dp</dimen>
+    <dimen name="dm35dp">35dp</dimen>
+    <dimen name="dm20dp">20dp</dimen>
+    <dimen name="dm60dp">60dp</dimen>
+</resources>

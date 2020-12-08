@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="moviewData"
+            type="com.techbulls.testmovies.ui.MoviesViewModel" />
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/imgSearch"
+                android:background="@drawable/shape_rounded_border_edittext"
+                android:imeOptions="actionDone"
+                android:text="@={moviewData.movieName}"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/dm5dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="@dimen/dm35dp"
+                android:layout_height="@dimen/dm35dp"
+                android:layout_margin="@dimen/dm2dp"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_search" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMoviewsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topLayout"
+            android:padding="@dimen/dm2dp" />
+
+        <TextView
+            android:id="@+id/tvEmptyList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/dm10dp"
+            android:text="@string/listisEmpty"
+            android:textSize="@dimen/dm35dp" />
+
+    </RelativeLayout>
+</layout>

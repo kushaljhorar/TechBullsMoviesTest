@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestMovies</string>
+    <string name="enterText">No result, Serch again</string>
+    <string name="listisEmpty">List is empty.Please enter text to seach</string>
+</resources>
